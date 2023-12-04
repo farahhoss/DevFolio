@@ -405,6 +405,7 @@
   transition: opacity 0.6s ease;
 }*/
 
+
 .carousel-vip-p {
   position: relative;
   background-image: url(DevFolio\ images/overlay-bg.jpg);
@@ -413,53 +414,33 @@
   background-position: top;
   height: 570px;
 }
-.carousel-indicators-vip {
-  position: absolute;
-  right: 0;
-  bottom: 7rem;
-  left: 0;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin-right: 15%;
-  margin-bottom: 1rem;
-  margin-left: 15%;
-}
-.carousel-indicators [data-bs-target] {
-  box-sizing: content-box;
-  flex: 0 1 auto;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  padding: 0;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  opacity: 0.5;
-  transition: opacity 0.6s ease;
-}
-.carousel-dark .carousel-indicators-vip [data-bs-target] {
-  background-color: white;
-}
 
-.caption-vip {
-  padding-top: 140px;
+#slider .carousel-item img {
+  height: 150px;
+  width: 150px;
 }
-.caption-vip p {
-  color: #fff;
-  font-size: 20px;
-}
-.caption-vip h5 {
+#slider .carousel-item h5 {
   color: #fff;
   font-size: 22px;
   font-weight: 600;
+}
+#slider .carousel-item p {
+  color: #fff;
+  font-size: 20px;
+}
+#slider .carousel-indicators button {
+  padding: 4px;
+  width: 5px;
+  background-color: white;
+  height: 5px;
+  border-radius: 50%;
+}
+#slider .carousel-indicators button.active {
+  padding: 4px;
+  width: 5px;
+  background-color: white;
+  height: 5px;
+  border-radius: 50%;
 }
 
 /*********************************BLOG-SECTION ********************************************************************/
