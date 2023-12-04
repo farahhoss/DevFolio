@@ -25,7 +25,8 @@
     flex-wrap: wrap;
   }
    #FORM {
-    height: 149vh;
+    height: 144vh;
+    padding-top: 70px;
   }
 }
 @media (min-width: 577px) and (max-width: 767px) {
@@ -45,7 +46,8 @@
     width: 50%;
   }
   #FORM {
-    height: 150vh;
+    height: 144vh;
+    padding-top: 70px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
