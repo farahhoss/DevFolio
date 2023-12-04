@@ -604,7 +604,7 @@
  
   background-position: center center;
   position: relative;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 .overlay-mf {
   position: absolute;
