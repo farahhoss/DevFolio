@@ -601,7 +601,7 @@
   height: 350px;
   background-image: url(DevFolio\ images/overlay-bg.jpg);
   background-size: contain;
-  background-attachment: fixed;
+ 
   background-position: center center;
   position: relative;
   background-repeat: no-repeat;
