@@ -600,7 +600,7 @@
 .protoflio-header {
   height: 350px;
   background-image: url(DevFolio\ images/overlay-bg.jpg);
-  background-size: contain;
+    background-size: contain cover;
  
   background-position: center center;
   position: relative;
