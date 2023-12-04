@@ -1,0 +1,76 @@
+@media (min-width: 400px) and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  .counter {
+    height: 800px;
+  }
+  .counter .counter-box {
+    height: 200px;
+  }
+  .caption-vip {
+    position: absolute;
+    right: 15%;
+    top: 9rem;
+
+    left: 15%;
+    padding-top: 0.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+  }
+  #FORM .icon-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  .counter {
+    height: 440px;
+  }
+  .counter .counter-box {
+    height: 440px;
+  }
+  #footer {
+    height: 250px;
+  }
+  #FORM .icon-row {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 15px;
+  }
+  .card-vip .card-logo {
+    top: -18px;
+    left: 72px;
+  }
+  #PORTFOLIO .card {
+    width: 22rem;
+  }
+  #FORM .icon-row {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 15px;
+  }
+  .card-vip .card-logo {
+    top: -18px;
+    left: 110px;
+  }
+  #PORTFOLIO .card {
+    width: 21rem;
+  }
+}
+@media (min-width: 1199px) and (max-width: 1399px) {
+  #PORTFOLIO .card {
+    width: 23rem;
+  }
+}

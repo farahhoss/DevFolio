@@ -1,0 +1,749 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+
+  scroll-behavior: smooth;
+}
+/*********************************home********************************************************************/
+.nav-spicial {
+  background-color: black !important;
+  z-index: 1000;
+}
+
+.nav-list-spe a {
+  color: white !important;
+  font-weight: 600;
+}
+.nav-list-spe .dropdown-menu a {
+  color: #595c5f !important;
+  font-weight: 600;
+  transition: color 0.7s 0s ease;
+}
+.nav-list-spe .dropdown-menu a:hover {
+  color: #0078ff !important;
+}
+.nav-list-spe li {
+  padding-left: 20px;
+}
+.nav-brand-spe {
+  font-size: 1.9rem;
+  color: white !important;
+  font-weight: 600;
+}
+.nav-item .nav-link {
+  position: relative;
+}
+.nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 6px;
+  left: 6px;
+  width: 0;
+  background-color: #fff;
+  z-index: 1100;
+  transition: all 0.3s ease-in-out 0s;
+}
+.nav-item .nav-link:hover::before {
+  width: 70%;
+}
+.nav-list-spe .dropdown-menu {
+  position: relative;
+}
+
+.deep-drop-down {
+  --bs-dropdown-padding-y: 0rem;
+  --bs-dropdown-spacer: 0rem;
+}
+.deep-drop-down ul {
+  list-style-type: none;
+
+  position: absolute;
+  width: 100%;
+  left: 80%;
+  opacity: 0;
+  transition: opacity 0.4s 0s ease-out;
+  height: 250px;
+}
+.deep-drop-down ul .down {
+  box-sizing: border-box;
+  height: 250px;
+}
+
+.deep-drop-down .dropdown-item::after {
+  content: "\f105";
+  font: var(--fa-font-solid);
+  margin-right: 5px;
+  color: #595c5f;
+}
+.deep-drop-down:hover ul {
+  opacity: 100%;
+}
+
+.deep-drop-down ul li {
+  padding-top: 10px;
+  display: flex;
+  justify-content: start;
+}
+.deep-drop-down ul li a {
+  text-decoration: none;
+}
+#home {
+  background-image: url(DevFolio\ images/hero-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#home .home-title h1 {
+  font-size: 4.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+#home .home-title h4 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  text-align: center;
+}
+#home .about-content {
+  top: 40%;
+  left: 25%;
+}
+#home .home-title h4::after {
+  content: " |";
+  animation-name: typing;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes typing {
+  0% {
+    content: "F|";
+  }
+  2.5% {
+    content: "Fr|";
+  }
+  5% {
+    content: "Fre|";
+  }
+  7.5% {
+    content: "Free|";
+  }
+  10% {
+    content: "Freel|";
+  }
+  12.5% {
+    content: "Freela|";
+  }
+  15% {
+    content: "Freelan|";
+  }
+  17.5% {
+    content: "Freelanc|";
+  }
+  20% {
+    content: "Freelance|";
+  }
+  22.5% {
+    content: "Freelancer|";
+  }
+  25% {
+    content: "Freelance|";
+  }
+  28% {
+    content: "Freelanc|";
+  }
+  30% {
+    content: "Freelan|";
+  }
+  32.5% {
+    content: "Freela|";
+  }
+  35% {
+    content: "Freel|";
+  }
+  37.5% {
+    content: "Free|";
+  }
+  40% {
+    content: "Fr";
+  }
+  42.5% {
+    content: "F";
+  }
+  45% {
+    content: "D|";
+  }
+  47.5% {
+    content: "De|";
+  }
+  50% {
+    content: "Des|";
+  }
+  52.5% {
+    content: "Desi|";
+  }
+  55% {
+    content: "Desig|";
+  }
+  58% {
+    content: "Design|";
+  }
+  60.5% {
+    content: "Designe|";
+  }
+  64% {
+    content: "Designer|";
+  }
+  67% {
+    content: "Designe|";
+  }
+  70% {
+    content: "Design|";
+  }
+  74% {
+    content: "Desig|";
+  }
+  80% {
+    content: "Desi|";
+  }
+  83% {
+    content: "Des|";
+  }
+  88.5% {
+    content: "De|";
+  }
+  95% {
+    content: "De|";
+  }
+  100% {
+    content: "D|";
+  }
+} /*********************************ABOUT********************************************************************/
+#about .skills {
+  font-size: 17.5px;
+  font-weight: 600;
+}
+#about h5 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+#about h5::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #0078ff;
+  width: 100px;
+  bottom: -12px;
+}
+/********************************SERVICES**************************************************************/
+.title-box h3 {
+  font-size: 58px;
+  font-weight: 700;
+}
+.line-mf {
+  height: 5px;
+  background-color: #0078ff;
+  width: 40px;
+  margin: auto;
+}
+#SERVICES .ico-circle {
+  height: 100px;
+  width: 100px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+
+  box-shadow: 0 0 0 10px #0078ff;
+  display: block;
+}
+#SERVICES .service-box .ico-circle {
+  /* transition: all 500ms ease;*/
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.5s 0s ease;
+}
+#SERVICES .service-box .service-ico {
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+#SERVICES .service-box .ico-circle .icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s 0s ease;
+  transition: color 0.5s 0s ease;
+}
+#SERVICES .service-box .ico-circle:hover {
+  box-shadow: 0 0 0 10px #0077ff4e;
+}
+#SERVICES .service-box .ico-circle:hover .icon {
+  background-color: #0078ff;
+}
+#SERVICES .service-box .ico-circle:hover .icon {
+  color: white;
+}
+#SERVICES .service-box .ico-circle .icon i {
+  text-align: center;
+}
+#SERVICES .service-content h2 {
+  font-size: 27px;
+  font-weight: 500;
+}
+/*********************************COUNTER********************************************************************/
+.counter {
+  height: 440px;
+  background-image: url(DevFolio\ images/counters-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  position: relative;
+}
+.overlay-mf {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background-color: #0078ff;
+}
+.counter .counter-box {
+  height: 440px;
+}
+.counter .counter-box .counter-ico .ico-circle {
+  height: 60px;
+  width: 60px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.69);
+  display: block;
+  color: white;
+}
+.counter .ico-circle .icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.counter .counter-num p {
+  color: white;
+  font-size: 32px;
+}
+.counter .counter-num span {
+  color: white;
+}
+/*********************************PROTOFOLIO********************************************************************/
+#PORTFOLIO h2 {
+  font-size: 19.5px;
+  font-weight: 500;
+}
+#PORTFOLIO .card {
+  width: 26rem;
+}
+#PORTFOLIO .more {
+  font-size: 12.8px;
+  color: RGB(78, 78, 78);
+}
+#PORTFOLIO .w-ctegory {
+  font-size: 12.8px;
+  color: RGB(0, 120, 255);
+}
+#PORTFOLIO .w-date {
+  font-size: 12.8px;
+  color: RGB(78, 78, 78);
+}
+#PORTFOLIO .w-like {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#PORTFOLIO .row .card img {
+  transition: transform 1s 0s ease;
+}
+#PORTFOLIO .row .card .card-photo {
+  overflow: hidden;
+}
+
+#PORTFOLIO .row .card:hover img {
+  transform: scale(1.3);
+}
+/*********************************SLIDER*******************************************************************/
+/* issue
+#slider .carousel-indicators-vip [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}*/
+
+.carousel-vip-p {
+  position: relative;
+  background-image: url(DevFolio\ images/overlay-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  height: 570px;
+}
+.carousel-indicators-vip {
+  position: absolute;
+  right: 0;
+  bottom: 7rem;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+}
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+.carousel-dark .carousel-indicators-vip [data-bs-target] {
+  background-color: white;
+}
+
+.caption-vip {
+  padding-top: 140px;
+}
+.caption-vip p {
+  color: #fff;
+  font-size: 20px;
+}
+.caption-vip h5 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/*********************************BLOG-SECTION ********************************************************************/
+.card-vip .card-logo {
+  top: -18px;
+  left: 169px;
+
+  text-align: center;
+  width: 70px;
+  height: 30px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.small-card-footer img {
+  width: 30px;
+}
+.card-title a {
+  color: #0d0d0d;
+  transition: color 1s 0s ease;
+}
+.card-title:hover a {
+  color: #0078ff;
+}
+.small-card-footer span a {
+  text-decoration: none;
+  color: #3e4040;
+  transition: color 1s 0s ease;
+}
+.small-card-footer span:hover a {
+  color: #0078ff;
+}
+/*********************************form-SECTION ********************************************************************/
+#FORM {
+  position: relative;
+  background-image: url(DevFolio\ images/overlay-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  height: 106vh;
+  padding-top: 130px;
+}
+#FORM h5 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+#FORM h5::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #0078ff;
+  width: 100px;
+  bottom: -12px;
+}
+
+.contact-details .btn {
+  width: 35%;
+  margin: auto;
+}
+.contact-details .btn button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0078ff;
+  border-radius: 40px;
+  border-width: 6px;
+  border-color: transparent;
+
+  color: white;
+  transition: background-color 0.7s 0s ease-out, border-color 0.7s 0s ease-out;
+}
+.contact-details .btn button:hover {
+  background-color: #4188d8;
+  border-color: rgba(255, 255, 255, 0.844);
+}
+#FORM .icon-row {
+  width: 50%;
+}
+#FORM .ico-circle {
+  height: 40px;
+  width: 40px;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+
+  box-shadow: 0 0 0 6px #0078ff;
+  display: block;
+}
+#FORM .ico-circle {
+  /* transition: all 500ms ease;*/
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.5s 0s ease;
+}
+#FORM .service-ico {
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+#FORM .ico-circle .icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s 0s ease;
+  transition: color 0.5s 0s ease;
+}
+#FORM .ico-circle:hover {
+  box-shadow: 0 0 0 6px #0077ff4e;
+}
+#FORM .ico-circle:hover .icon {
+  background-color: #0078ff;
+}
+#FORM .ico-circle:hover .icon {
+  color: white;
+}
+#FORM .ico-circle .icon i {
+  text-align: center;
+  font-size: 20px;
+}
+/*********************************FOOTER-SECTION ********************************************************************/
+#footer {
+  height: 20vh;
+  background-color: #0062d3;
+}
+/*************************************************protoflio-details************************************************************/
+.nav-spicial-protoflio {
+  background-color: #0078ff !important;
+  z-index: 1000;
+}
+.protoflio-header {
+  height: 350px;
+  background-image: url(DevFolio\ images/overlay-bg.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+}
+.overlay-mf {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+  background-color: #0077ffd5;
+}
+.titel-protoflio {
+  padding-top: 100px;
+}
+.titel-protoflio h2 {
+  font-size: 56px;
+  font-weight: 600;
+}
+.titel-protoflio p {
+  color: RGB(205, 225, 248);
+}
+.titel-protoflio p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#protoflio-example .carousel-indicators button {
+  padding: 5px;
+  width: 5px;
+  background-color: #0062d3;
+  height: 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#protoflio-example .carousel-indicators button.active {
+  padding: 5px;
+  width: 5px;
+  background-color: #0062d3;
+  height: 5px;
+  border-radius: 50%;
+  opacity: 1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.Project-information h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.Project-information p {
+  color: #3e4040;
+  font-size: 15px;
+}
+.Project-information p span {
+  color: #000000;
+  font-weight: 700;
+  font-size: 15px;
+}
+.Project-information2 h2 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 26px;
+}
+.Project-information2 p {
+  color: #3e4040;
+  font-weight: 400;
+  font-size: 16px;
+}
+/**************************************blog-details*************************************************************/
+#blog-details h5::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #0078ff;
+  width: 100px;
+  bottom: -12px;
+}
+#blog-details h5 {
+  font-size: 35px;
+  font-weight: 500;
+}
+#blog-details h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+#blog-details .blog-comment p {
+}
+#blog-details .blog-link::before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 5px;
+  background-color: #4188d8;
+}
+#blog-details .blog-details-text-vip span {
+  font-size: 20px;
+}
+#blog-details .blog-details-text-vip::before {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 5px;
+  background-color: #4188d8;
+}
+.contact-details .btn-spi {
+  width: 35%;
+  margin-left: 0;
+}
+#blog-details .blog-text2 h6 span {
+  font-size: 28px;
+}
+#blog-details .blog-text2 h6::before {
+  content: "";
+  position: absolute;
+  height: 29px;
+  width: 5px;
+  background-color: #4188d8;
+}
+
+.blog-text2 li span {
+  color: #0078ff;
+  font-size: 25px;
+  font-weight: 400;
+}
+.blog-text2 li::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 1px;
+  left: 0;
+  background-color: #0078ff;
+  top: 25px;
+  z-index: 100;
+}
+
+.blog-details-skils-btn a {
+  color: white;
+  text-decoration: none;
+}
