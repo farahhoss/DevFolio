@@ -604,6 +604,7 @@
   background-attachment: fixed;
   background-position: center center;
   position: relative;
+  background-repeat: no-repeat;
 }
 .overlay-mf {
   position: absolute;
