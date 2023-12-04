@@ -405,7 +405,6 @@
   transition: opacity 0.6s ease;
 }*/
 
-
 .carousel-vip-p {
   position: relative;
   background-image: url(DevFolio\ images/overlay-bg.jpg);
@@ -581,11 +580,10 @@
 .protoflio-header {
   height: 350px;
   background-image: url(DevFolio\ images/overlay-bg.jpg);
-    background-size: contain cover;
- 
+  background-size: contain cover;
+  background-repeat: repeat;
   background-position: center center;
   position: relative;
-  background-repeat: repeat;
 }
 .overlay-mf {
   position: absolute;
@@ -667,6 +665,7 @@
   width: 100px;
   bottom: -12px;
 }
+
 #blog-details h5 {
   font-size: 35px;
   font-weight: 500;
