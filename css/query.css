@@ -24,6 +24,9 @@
     display: flex;
     flex-wrap: wrap;
   }
+   #FORM {
+    height: 160vh;
+  }
 }
 @media (min-width: 577px) and (max-width: 767px) {
   html {
