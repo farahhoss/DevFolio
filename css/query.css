@@ -2,6 +2,9 @@
   html {
     font-size: 14px;
   }
+  .nav-item .nav-link:hover::before {
+    width: 15%;
+  }
   .counter {
     height: 800px;
   }
@@ -36,6 +39,9 @@
   html {
     font-size: 14px;
   }
+  .nav-item .nav-link:hover::before {
+    width: 15%;
+  }
   .counter {
     height: 800px;
   }
@@ -67,6 +73,9 @@
   html {
     font-size: 14px;
   }
+  .nav-item .nav-link:hover::before {
+    width: 15%;
+  }
   .counter {
     height: 440px;
   }
@@ -85,6 +94,9 @@
 @media (min-width: 768px) and (max-width: 991px) {
   html {
     font-size: 15px;
+  }
+  .nav-item .nav-link:hover::before {
+    width: 15%;
   }
   .card-vip .card-logo {
     top: -18px;
